@@ -5,7 +5,7 @@ import { UserPropTypes } from '../../proptype/proptype';
 const User = ({ name, email, address }) => (
   <div>
     <a href="/ ">
-      <img className="user-icon" src="./images/user-icon.png" alt="user-ipon" />
+      <img className="user-img" src="./images/user-icon.png" alt="user-ipon" />
       {name}
     </a>
     <p>

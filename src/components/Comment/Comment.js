@@ -7,14 +7,13 @@ const Comment = ({ comment, deleteComment }) => {
   const { name, email, body } = comment;
 
   return (
-    <div className="comment">
+    <div>
       <User name={name} email={email} />
-      <p className="comment-text">
+      <p>
         {body}
       </p>
       <button
         type="button"
-        className="btn-delete-comment"
         onClick={deleteComment}
       >
         x

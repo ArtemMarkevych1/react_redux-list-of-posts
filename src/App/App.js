@@ -25,7 +25,7 @@ class App extends React.Component {
 
     return (
       <>
-        <h1 className="heading">Dynamic list of todos</h1>
+        <h1>Dynamic list of todos</h1>
         {isLoaded ? (
           <>
             <input
@@ -33,7 +33,6 @@ class App extends React.Component {
               value={searchWord}
               name="search-input"
               placeholder="Search..."
-              className="search"
               onChange={this.handleSearchChange}
             />
             <PostList />
@@ -41,13 +40,12 @@ class App extends React.Component {
         ) : (
           <>
             {hasError && (
-              <h2 className="error-title">
+              <h2>
                 Oh, something went wrong! Please, try again
               </h2>
             )}
             <button
               type="button"
-              className="load-button"
               onClick={loadPosts}
               disabled={isLoading}
             >
